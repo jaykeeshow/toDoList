@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React App</title>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Condensed", sans-serif;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .toDoList {
+        width: 800px;
+        margin: 30px auto;
+        border-radius: 4px;
+        box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      .toDoList .header {
+        background-color: #0a1f44;
+        padding: 30px 40px;
+        color: white;
+        text-align: center;
+      }
+      .toDoList .header:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .toDoList input {
+        border: none;
+        width: 75%;
+        padding: 10px;
+        float: left;
+        font-size: 16px;
+      }
+      .toDoList ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .toDoList ul li {
+        cursor: pointer;
+        position: relative;
+        padding: 12px 8px 12px 40px;
+        background: #eee;
+        font-size: 18px;
+        transition: 0.2s;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .toDoList ul li:hover {
+        background: #ddd;
+      }
+      .toDoList .btn-add {
+        padding: 10px;
+        width: 25%;
+        background: #d9d9d9;
+        color: #555;
+        float: left;
+        text-align: center;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 0;
+      }
+
+      .toDoList .btn-add:hover {
+        background-color: #bbb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toDoList">
+      <form class="header">
+        <span>You are offline. Please go online to edit your list</span>
+        <h2>My list of to-do things</h2>
+
+        <input type="text" placeholder="for example do laundry...." />
+        <button class="btn-add">Add</button>
+      </form>
+      <ul>
+        <li>Learn React</li>
+        <li>Go cycling</li>
+      </ul>
+    </div>
+  </body>
+</html>
